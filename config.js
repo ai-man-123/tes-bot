@@ -115,7 +115,7 @@ global.ultahowner = 'Juli 11 2022'
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/5404d2affc7e9119cc95a.jpg' //Main Thumbnail
+global.thumb = 'https://telegra.ph/file/2528fcd6f1fff4fbb4ea4.jpg' //Main Thumbnail
 global.imagebot = 'https://telegra.ph/file/06c4e93a3d3f388b2642d.jpg'
 global.giflogo = 'https://ibb.co/3sJ0ybv'
 global.thumbbc = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4' //For broadcast

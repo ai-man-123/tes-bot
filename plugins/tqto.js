@@ -20,7 +20,7 @@ Terimakasih Juga Untuk Kang Banned:
 ─────────────────────
 • God
 • My ortu
-• King Of Bear ( Me )
+• aiman
 • Nurutomo
 • Adiwajshing
 • Ariffb

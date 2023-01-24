@@ -93,7 +93,7 @@ let tags
 let emot = `⃟࿑⃟⃟⃟⟣⟜ ${pickRandom(['⎔', '◈▻', '✦', '⭑', 'ᯬ', '⭔', '◉', '⬟', '᭻', '»', '〆', '々', '⛥', '✗', '⛊', '⚜', '⚝', '⚚', '♪'])}`
 let rndom = `${pickRandom(['defaultMenu', 'defmenu1'])}`
 let teks = `${args[0]}`.toLowerCase()
-let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'store', 'virus', 'thnks']
+let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'audio', 'jadibot', 'info', 'owner', 'store', 'virus', 'thnks']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
@@ -133,9 +133,6 @@ let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random',
   }
   if (teks == 'anime') tags = {
     'anime': 'Anime'
-  }
-  if (teks == 'nsfw') tags = {
-    'nsfw': 'Nsfw'
   }
   if (teks == 'rpg') tags = {
     'rpg': 'Rpg'
@@ -280,7 +277,6 @@ rows: [
 	{title: `⫹🐚 › ${emot}〚 Kerang 〛-𐑂`, rowId: ".? kerangajaib", description: "╰► Mau tanya apa sih bg?..."},
 	{title: `⫹📑 › ${emot}〚 Quotes 〛-𐑂`, rowId: ".? quotes", description: "╰► Ada yg mau nyari topik nih... >-<"},
 	{title: `⫹⛩️ › ${emot}〚 Anime 〛-𐑂`, rowId: ".? anime", description: "╰► Lah, Wibuu...-𐑂"},
-	{title: `⫹🔞 › ${emot}〚 Nsfw 〛-𐑂`, rowId: ".? nsfw", description: "╰► Anak kecil ga boleh ya...."},
 	{title: `⫹📚 › ${emot}〚 Edukasi 〛-𐑂`, rowId: ".? edukasi", description: "╰► Belajar edukasi dari fitur bot..."},
 	{title: `⫹🌟 › ${emot}〚 Premium 〛-𐑂`, rowId: ".? premium", description: "╰► Hanya khusus users premium..."},
 	{title: `⫹🎭 › ${emot}〚 Anonymous chat 〛-𐑂`, rowId: ".? anonymous", description: "╰► Mau ngomong sama mantan kah? >.<"},
@@ -291,7 +287,7 @@ rows: [
 	{title: `⫹✏️ › ${emot}〚 Nulis 〛-𐑂`, rowId: ".? nulis", description: "╰► Hati-hati ke tawan bu sri..."},
 	{title: `⫹🎵 › ${emot}〚 Audio 〛-𐑂`, rowId: ".? audio", description: "╰► Calon remixer nih haha ></"},
         {title: `⫹🎶 › ${emot}〚 Sound 〛-𐑂`, rowId: ".soundmenu", description: "╰► dengerin lagu nih haha ></"},
-	{title: `⫹🎦 › ${emot}〚 Preset AM 〛-𐑂`, rowId: ".presetmenu", description: "╰► Mau Ngedit Ya ></"},
+	{title: `⫹🎦 › ${emot}〚 Preset AM 〛-𐑂`, rowId: ".presetmenu", description: "╰► Mau edit Ya ></"},
 	{title: `⫹🦄 › ${emot}〚 Group 〛-𐑂`, rowId: ".? group", description: "╰► Menu settingan buat group mu kak -??"},
 	{title: `⫹👑 › ${emot}〚 Admin 〛-𐑂`, rowId: ".? admin", description: "╰► Yg bukan admin jangan make fitur ini >-<"},
 	{title: `⫹🗃️️ › ${emot}〚 Database 〛-𐑂`, rowId: ".? database", description: "╰► Simpen apa tuh.... >.<"},
@@ -307,9 +303,9 @@ title: `⃟⟣⟚⟝ ⟡ Support Me ${namebot} ⟡ ⟞⟚⟢⃟`,
 rows: [
 {title: `🔖 ${emot} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
 	    {title: `🌟 ${emot} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💹 ${emot} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `🔌 ${emot} PING`, rowId: ".ping", description: 'menampilkan ping dan speed'},
 ]}]
-let psan = 'bagaimana kabarmu?'
+let psan = 'bagaimana kabarmu kawan?'
 let usrs = db.data.users[m.sender]
 let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg'), thumbnail: fs.readFileSync('./thumbnail.jpg'),sendEphemeral: true}}}
 let tagnya = `@${m.sender.split`@`[0]}`
@@ -375,7 +371,7 @@ text: tett,
 footer: fot,
 mentions: await conn.parseMention(con),
 title: con,
-buttonText: `CLICK HERE ⎙`, 
+buttonText: `CLICK HERE☢ `, 
 sections
 }
 if (teks == '404') {
@@ -541,7 +537,7 @@ let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 │◇ Dᴀᴛᴀʙᴀsᴇ: ${totalreg}
 ╰╸╳`
 let nomorwa = '0'
-let nomorowm1 = '628812743180'
+let nomorowm1 = '60102810046'
 let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 let d2 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 let d3= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'

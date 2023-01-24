@@ -51,8 +51,8 @@ global.nameown = 'Aiman'
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['60102810046'],
-  ['60102810046'], 'aiman', true]
+  ['60102810046', 'lynxaiman', true]
+
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -145,7 +145,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/eab73c91053a1c4072931.jpg'
+global.thumbdoc = 'https://telegra.ph/file/16745285870421865389612.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
